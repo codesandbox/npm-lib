@@ -86,7 +86,7 @@ export function runInAction(arg1, arg2?) {
             "`runInAction` expects a function without arguments"
         )
         if (typeof actionName !== "string" || !actionName)
-            fail(`actions should have valid names, got: '${actionName}'`)
+            fail(`actions should have a valid name, got: '${actionName}'`)
     }
 
     return executeAction(actionName, fn, this, undefined)
